@@ -47,6 +47,10 @@ lvim.keys.normal_mode["mf"] = "/"
 -- no search
 lvim.keys.normal_mode["m1"] = ":nohlsearch<cr><c-l>"
 
+-- Tagbar
+lvim.keys.visual_mode["mt"] = ":Tabularize /"
+
+
 
 -- }
 -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
@@ -169,13 +173,15 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- }
 
 -- Additional Plugins
--- lvim.plugins = {
---     {"folke/tokyonight.nvim"},
---     {
---       "folke/trouble.nvim",
---       cmd = "TroubleToggle",
---     },
--- }
+lvim.plugins = {
+  { "godlygeek/tabular" },
+  { "rhysd/clever-f.vim" },
+  { "stevearc/vim-arduino" },
+  --   {
+  --     "folke/trouble.nvim",
+  --     cmd = "TroubleToggle",
+  --   },
+}
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- lvim.autocommands.custom_groups = {
